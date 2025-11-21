@@ -24,9 +24,8 @@ Text and metric embeddings were combined to build several regression and contras
 
 ### 2.1 Classical Regression Models
 Notebooks:  
-- `01_linear_regression.ipynb`  
-- `02_ridge_regression.ipynb`  
-- `03_lightgbm_baseline.ipynb`
+- `data_initial_lightgbm.ipynb`  
+- `lightgbm2.ipynb`  
 
 Methods:
 - Linear Regression  
@@ -35,15 +34,15 @@ Methods:
 - Additional engineered distance and similarity features  
 
 Output files:  
-- `linear_regression.csv`  
-- `ridge_regression.csv`  
-- `lgbm_submission.csv`
+- `lightgbm_predictions2 (1).csv`
+
 
 ---
 
 ## 3. Approach 2: Contrastive Learning with Negative Sampling
 Notebooks:  
-- `04_contrastive_mlp.ipynb`
+- `mlp1.ipynb`
+- `mlp_and_dual_encoder.ipynb`
 
 Key ideas:
 - Combine text and metric embeddings  
@@ -53,12 +52,13 @@ Key ideas:
 
 Output:  
 - `contrastive_mlp.csv`
+- `contrastive_de.csv`
 
 ---
 
 ## 4. Approach 3: Dual Encoder + Shared Latent Space
 Notebooks:  
-- `05_dual_encoder_experiments.ipynb`  
+- `final.ipynb`  
 
 Highlights:
 - Separate projectile networks for text vs metric embeddings  
@@ -73,15 +73,10 @@ Variants explored:
 - MPNet, Gemma, and precomputed embeddings  
 
 Output files include:
-- `dual_encoder_single_head.csv`  
-- `dual_encoder_experts.csv`
+- `final.csv`  
+
 
 ---
-
-## 5. Final Best Model
-Notebook:  
-- `06_final_twohead_projector.ipynb`
-
 Model:  
 - Dual-encoder architecture  
 - Gentle LayerNorm  
