@@ -87,8 +87,7 @@ Model:
 Performance:  
 - Test RMSE: **1.7–1.8**
 
-Final submission:  
-- `submission_soft_layernorm.csv`
+
 
 ---
 
